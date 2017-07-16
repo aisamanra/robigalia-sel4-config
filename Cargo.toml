@@ -1,0 +1,16 @@
+# Copyright (c) 2017 The Robigalia Project Developers
+# Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+# http://www.apache.org/licenses/LICENSE-2.0> or the MIT license <LICENSE-MIT
+# or http://opensource.org/licenses/MIT>, at your option. All files in the
+# project carrying such notice may not be copied, modified, or distributed
+# except according to those terms.
+
+[package]
+name = "sel4-config"
+version = "0.0.1"
+authors = ["Jimmy Brush <code@jimmah.com>"]
+description = "Build dependency to convert seL4 config file into feature flags and generated code module"
+repository = "https://gitlab.com/robigalia/sel4-config"
+documentation = "https://doc.robigalia.org/sel4-config"
+
+[dependencies]
