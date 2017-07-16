@@ -44,21 +44,22 @@ fn main() {
 }
 ```
 
-Import the generated sel4_config module in your lib.rs or main.rs:
-
-```
-include!(concat!(env!("OUT_DIR"), "/sel4_config.rs"));
-```
-
 You can now access seL4 configuration flags using features:
 
 ```
 #[cfg(feature = "CONFIG_ENABLE_BENCHMARKS")]
 fn do_benchmarking() {
+  ..
 }
 ```
 
-You can also access seL4 configuration values using module sel4_config:
+If you import the generated sel4_config module in your lib.rs or main.rs:
+
+```
+include!(concat!(env!("OUT_DIR"), "/sel4_config.rs"));
+```
+
+Then, you can also access seL4 configuration values using module sel4_config:
 
 ```
 println!("We support {} CPUs", sel4_config::CONFIG_MAX_NUM_NODES);
